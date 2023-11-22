@@ -1,0 +1,65 @@
+<div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+    <app-sidebar></app-sidebar>
+    <div class="h-screen flex-grow-1 overflow-y-lg-auto">
+        <app-topbar></app-topbar>
+
+
+        <main class="py-6 bg-surface-secondary">
+            <div class="container-fluid">
+
+                <div class="card shadow border-0 mb-7">
+                    <div class="card-header">
+                        <h5 class="mb-0">Products</h5>
+                    </div>
+                    <div class="table-responsive">
+
+
+                        <table class="table table-hover table-nowrap">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Products Image</th>
+                                    <th scope="col">Products Title</th>
+                                    <th scope="col">Products color</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Actions</th> <!-- New column for action buttons -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let comment of commentsData">
+                                    <td>
+                                        <img [src]="'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'" alt="Product Image"
+                                            class="avatar avatar-sm rounded-circle me-2">
+                                    </td>
+                                    <td>{{ comment.title }}</td>
+                                    <td>{{ comment.color }}</td>
+                                    <td>$ {{ comment.price }}</td>
+                                    <td class="text-end">
+                                        <button type="button" class="btn btn-sm btn-primary me-2" (click)="viewProduct(comment)">
+                                            View
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-warning me-2"
+                                            (click)="editProduct(comment)">
+                                            Edit
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-danger"
+                                            (click)="deleteProduct(comment)">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </main>
+
+
+
+    </div>
+</div>

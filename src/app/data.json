@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "username": "waqar",
+      "email": "qatt@ggggg",
+      "password": "12121",
+      "id": 1
+    },
+    {
+      "username": "Usama",
+      "email": "usama@gmail.com",
+      "password": "usama",
+      "id": 2
+    },
+    {
+      "username": "waqar",
+      "email": "waqar@gmail.com",
+      "password": "waqar",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "title": "10 innovative ideas in sustainable clothingyyyyyyyyyyyyyyyyyyyyyyyyyy",
+      "color": "Multipule",
+      "price": "500",
+      "image": "https://www.springwise.com/wp-content/uploads/2019/08/innovative-ideassustainable-clothing-reusable-fabric-1568x729.png",
+      "id": 1
+    },
+    {
+      "title": "10 innovative ideas in sustainable clothing one two",
+      "color": "Multipule",
+      "price": "500",
+      "image": "https://www.springwise.com/wp-content/uploads/2019/08/innovative-ideassustainable-clothing-reusable-fabric-1568x729.png",
+      "id": 2
+    },
+    {
+      "title": "Lala G ki product",
+      "color": "kala",
+      "price": "500",
+      "image": "https://m1.com.pk/wp-content/uploads/2022/08/Guitar-Cleaning-Microfiber-Cloth.jpg",
+      "id": 3
+    }
+  ]
+}

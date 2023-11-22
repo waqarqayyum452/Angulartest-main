@@ -1,0 +1,39 @@
+
+
+
+<div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+    <app-sidebar></app-sidebar>
+    <div class="h-screen flex-grow-1 overflow-y-lg-auto">
+        <app-topbar></app-topbar>
+
+
+        <main class="py-6 bg-surface-secondary">
+
+
+            <div class="container justify-content-center d-flex mt-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 48rem;">
+                            <div class="product-image" id="productImage">
+                                <img [src]="'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'" class="card-img-top" style="width: 90px;"  alt="Product Image">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">{{ product.title }}</h5>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text">product Color: {{ product.color }}</p>
+                                    <p class="card-text">Price: ${{ product.price }}</p>
+                                </div>
+                                <!-- <a href="#" class="btn btn-primary">Buy Now</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+
+
+    </div>
+</div>
